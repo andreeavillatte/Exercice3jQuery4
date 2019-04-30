@@ -67,6 +67,8 @@ $(function () {
             $('#number').after(small);
         }
         event.preventDefault();
+/////////////////// Il faut ajouter un message quand j'envoie les donnees correctes, pour dire 
+//alert('Vos informations ont bien été enregistrées. Merci.');
 
     })
     });
