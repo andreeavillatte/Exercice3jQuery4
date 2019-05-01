@@ -7,7 +7,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/js/style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Formulaire</title>
 </head>
 <body>
@@ -16,46 +16,35 @@
       <h1>Exercices-03</h1>
       <p>JQuery-Pt4</p>
     </div>
-  </div>
-<!-- Formulaire/////////////////////////////////////////////////// -->
-  <!-- <div class="row"> mx-auto" style="width: 250px;"> -->
-  <form class="container text-center" novalidate>
     <h1 class="text-center">Formulaire</h1>
-    <div class="form-group row">
-      <label for="Name" class="col-sm-2 col-form-label">Nom</label>
-      <div class="col-sm-6">
-      <input required type="text" class="form-control" id="Name"  placeholder="Entrer nom">
-    </div>
+    <form novalidate>
+      <div class="form-group">
+        <label for="Name">Nom</label>
+        <input required type="text" class="form-control" id="Name" placeholder="Doe">
+      </div>
+      <div class="form-group">
+        <label for="firstName">Prénom</label>
+        <input required type="text" class="form-control" id="firstName" placeholder="John">
+      </div>
+      <div class="form-group">
+        <label for="Email">Adresse Mail</label>
+        <input required type="email" class="form-control" id="Email" placeholder="somebody@example.com">
+      </div>
+      <div class="form-group">
+        <label for="Phone">Téléphone</label>
+        <input required type="tel" class="form-control" id="number" placeholder="06 75 91 54 32" minlength="10" maxlength="14">
+      </div>
+      <button type="submit" class="btn btn-primary">Valider</button>
+    </form>
   </div>
-    <div class="form-group row">
-      <label for="firstName" class="col-sm-2 col-form-label">Prénom</label>
-      <div class="col-sm-6">
-      <input required type="text" class="form-control" id="firstName" placeholder="Entrer prénom">
-    </div>
-  </div>
-    <div class="form-group row">
-      <label for="Email" class="col-sm-2 col-form-label">Adresse Mail</label>
-      <div class="col-sm-6">
-      <input required type="email" class="form-control" id="Email" placeholder="Entrer l'adresse mail">
-    </div>
-  </div>
-    <div class="form-group row">
-      <label for="Phone" class="col-sm-2 col-form-label">Téléphone</label>
-      <div class="col-sm-6">
-      <input required type="tel" class="form-control" id="number" placeholder="Entrer numéro de téléphone" minlength="10" maxlength="14">
-    </div>
-  </div>
-    <button type="submit" class="btn btn-primary mt-4">Valider</button>
-  </form>
-<!-- </div> -->
-
-</div>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<!-- <script src="assets/js/main.js"></script> -->
-<script src="assets/js/main2.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Pour quand on veux faire la validation avec le CSS et avec la validation de conditions de HTML -->
+  <script src="assets/js/main.js"></script>
+  <!-- Pour quand on veut faire la verification avec des REGEX -->
+  <!-- <script src="assets/js/main2.js"></script> -->
 </body>
 </html>

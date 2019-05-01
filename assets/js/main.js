@@ -6,8 +6,7 @@ $(function () {
         //on recupere toutes las inputs; je les mets dans une seule variable
         // on va creer comme "query selecteur all"
         var inputs = $('input');
-        
-        $('small').remove();
+                $('small').remove();
         // on va parcourir ce tableau pour traiter chaque colonne du tableau
         // cette methode (.each) permet de parcourir mon tableau
         $.each(inputs, function () {
